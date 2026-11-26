@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AngkaNusa — Portal Statistik Indonesia</title>
+<meta name="description" content="AngkaNusa: penduduk, ekonomi, harga, ketenagakerjaan, dan provinsi Indonesia dalam angka — dari rilis BPS, Bank Indonesia, dan World Bank.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark">Angka<b>Nusa</b></span>
+      <span class="brand-tag">Portal Statistik Indonesia</span>
+    </a>
+    <div class="year-picker">
+      <label for="year-select">Tahun data:</label>
+      <select id="year-select">
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024" selected>2024</option>
+      </select>
+    </div>
+  </div>
+  <nav class="main-nav" aria-label="Navigasi utama">
+    <a href="#/">Beranda</a>
+    <a href="#/penduduk">Penduduk</a>
+    <a href="#/ekonomi">Ekonomi</a>
+    <a href="#/harga">Harga &amp; Inflasi</a>
+    <a href="#/kerja">Ketenagakerjaan</a>
+    <a href="#/wilayah">Provinsi</a>
+    <a href="#/sumber">Sumber Data</a>
+  </nav>
+</header>
+
+<main class="wrap" id="view"></main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><b>AngkaNusa</b> — Portal Statistik Indonesia. Portal orisinal; bukan situs resmi BPS.</p>
+    <p>Angka-angka dikutip dari Badan Pusat Statistik (BPS), Bank Indonesia, dan World Bank, masing-masing dilabeli sumber dan tahunnya di tempat angka itu tampil.</p>
+    <p>Berjalan sepenuhnya dari berkas statis — tanpa permintaan jaringan. <a href="#/sumber">Sumber Data &amp; Metodologi</a></p>
+  </div>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
